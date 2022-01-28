@@ -49,9 +49,11 @@ body {
 .nav-menu-block {
     display: block;
 }
+.nav-menu-none {
+    display: none;
+}
 
 .nav-menu {
-    display: none;
     position: fixed;
     text-align: center;
     right: 0;

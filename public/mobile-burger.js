@@ -11,6 +11,6 @@ let closeBtn = document.querySelector('.close');
 closeBtn.addEventListener('click', ()=>{
     navMenu.classList.add('nav-menu-none');
     navMenu.classList.remove('nav-menu-block');
-})
+});
 
-console.log(burgerBtn);
+console.log("HELLO!");
