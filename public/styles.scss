@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,900&display=swap");
 
 :root {
-    --font-color-primary: rgb(39, 39, 39);
+    --font-color-primary: rgb(53, 53, 53);
     --font-color-secondary: rgb(245, 245, 245);
 }
 
@@ -157,42 +157,42 @@ img {
     border-bottom-left-radius: 5em;
     border-bottom-right-radius: 1em;
 
-    .about-section-current{
+    .about-section-current {
         font-size: 2em;
 
-        .current-courses{
+        .current-courses {
             text-align: center;
             font-size: 1.2em;
-            .curr-studying{
+            .curr-studying {
                 font-weight: bold;
             }
-            ul{
+            ul {
                 margin-left: 1.5em;
             }
-            li{
+            li {
                 width: max-content;
             }
         }
     }
 
-    .about-section-about-me{
+    .about-section-about-me {
         font-size: 2em;
-        .journey{
+        .journey {
             font-size: 1.2em;
             font-weight: bold;
         }
-        .skip a{
+        .skip a {
             text-decoration: underline;
             color: white;
             font-weight: bold;
         }
     }
 
-    .finished-certificates{
+    .finished-certificates {
         ul {
             padding: 0;
             list-style: none;
-            a{
+            a {
                 font-size: 0.7em;
                 text-decoration: underline;
                 color: rgb(196, 196, 196);
@@ -201,5 +201,90 @@ img {
     }
 }
 
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+    color: var(--font-color-primary);
+    font-size: 2em;
 
+    .projects-in-the-making {
+        img {
+            width: 250px;
+            border-radius: 1em;
+        }
+        h2 {
+            font-size: 2em;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+        a {
+            text-decoration: underline;
+            color: var(--font-color-primary);
+            font-size: 0.8em;
+        }
+        > div {
+            margin-top: 1em;
+        }
+    }
 
+    .apps-to-create {
+        list-style: none;
+        padding: 0;
+    }
+}
+
+.contact {
+    text-align: center;
+
+    h2 {
+        font-size: 3em;
+        text-shadow: 0px 0px 1px 5px black;
+    }
+
+    p{
+        font-size: 1.5em;
+    }
+    .form-div {
+        input {
+            font-family: "Source sans pro";
+            padding: 1em 3em;
+            margin-bottom: 1em;
+            background: rgb(241, 241, 241);
+            color: var(--font-color-primary);
+            font-weight: bold;
+            border: none;
+            box-shadow: 2px 2px 10px 0px black;
+            border-radius: 1em;
+        }
+        textarea {
+            font-family: "Source sans pro";
+            background: rgb(241, 241, 241);
+            color: var(--font-color-primary);
+            font-weight: bold;
+            padding: 1em;
+            border: none;
+            box-shadow: 2px 2px 10px 0px black;
+            border-radius: 1em;
+        }
+        button {
+            padding: 1.5em 3em;
+            margin-top: 1em;
+            border: none;
+            background: black;
+            color: var(--font-color-secondary);
+            border-radius: 2em;
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    color: var(--font-color-primary);
+}
