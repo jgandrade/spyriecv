@@ -19,16 +19,23 @@
             <div class="nav-menu nav-menu-none">
                 <i class="fas fa-times-circle close"></i>
                 <ul class="nav-ul">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li class="socials-list">Socials<i class="fas fa-caret-right socials-caret"></i>
                         <ul class="socials-links">
-                            <li><a href="#Youtube"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="#Github"><i class="fab fa-github"></i></a></li>
-                            <li><a href="#LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-                            <li><a href="#StackOverflow"><i class="fab fa-stack-overflow"></i></a></li>
+                            <li><a href="https://www.youtube.com/spyrie" target="_blank"><i
+                                        class="fab fa-youtube"></i></a></li>
+                            <li><a href="https://github.com/jgandrade" target="_blank"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/john-glenn-andrade-5607ab190/" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://www.freecodecamp.org/fcc8e13cc3c-01d0-4338-bea0-a9e823ae779d"
+                                    target="_blank"><i class="fab fa-free-code-camp"></i></a></li>
+                            <li><a href="https://stackoverflow.com/users/17776596/jgandrade" target="_blank"><i
+                                        class="fab fa-stack-overflow"></i></a></li>
                         </ul>
                     </li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="burger-btn"><i class="fas fa-bars"></i></div>
@@ -44,7 +51,7 @@
             <img src="images/svgs/hero.svg" alt="hero-img" class="hero-img">
         </section>
 
-        <section class="about-section">
+        <section id="about" class="about-section">
             <div class="about-section-current">
                 <h2 class="about-section-p1">Looking forward to be a
                     fullstack developer</h2>
@@ -130,7 +137,7 @@
             </div>
         </section>
 
-        <section class="projects">
+        <section id="projects" class="projects">
             <div class="projects-in-the-making">
                 <h2>Things I have built so far:</h2>
                 <div>
@@ -138,8 +145,10 @@
                     <p>In this app, I experimented on how Local Storage works and how to use javascript to manipulate
                         the DOM. The app basically just have buttons to choose from that when pressed, voting results
                         will update/render</p>
-                    <a href="https://jgandrade.github.io/samplevotingapp/" target="_blank"><img
-                            src="images/projectimg/samplevotingapp.png" alt="sample-voting-app"></a>
+                    <figure>
+                        <a href="https://jgandrade.github.io/samplevotingapp/" target="_blank"><img
+                                src="images/projectimg/samplevotingapp.png" alt="sample-voting-app"></a>
+                    </figure>
                     <a href="https://jgandrade.github.io/samplevotingapp/" target="_blank">Click this or the image to
                         view the app</a>
                 </div>
@@ -150,8 +159,10 @@
                         with eventListeners. This simple app game me a leap to my understanding how DOM works. The only
                         used recursion for the computer's turn and store game data in an object. Designs came from The
                         App Brewery, by Angela Yu</p>
-                    <a href="https://jgandrade.github.io/simonsgame/" target="_blank"><img
-                            src="images/projectimg/simonsgame.png" alt="simons-game"></a>
+                    <figure>
+                        <a href="https://jgandrade.github.io/simonsgame/" target="_blank"><img
+                                src="images/projectimg/simonsgame.png" alt="simons-game"></a>
+                    </figure>
                     <a href="https://jgandrade.github.io/simonsgame/" target="_blank">Click this or the image to view
                         the app</a>
                 </div>
@@ -167,17 +178,17 @@
             </ul>
         </section>
 
-        <section class="contact">
+        <section id="contact" class="contact">
             <h2>Get In Touch</h2>
             <p>For future projects, collaboration, suggestions contact me using this</p>
             <div class="form-div">
                 <form action="/" method="POST">
-                    <input type="text" class="form" name="fname" placeholder="First Name">
-                    <input type="text" class="form" name="lname" placeholder="Last Name">
-                    <input type="email" class="form" placeholder="name@example.com">
-                    <textarea id="w3review" name="w3review" rows="5" cols="35"
-                        placeholder="Enter your message for me here..."></textarea>
-                    <button type="submit">Submit</button>
+                    <div><input type="text" class="form" name="fname" placeholder="First Name"></div>
+                    <div><input type="text" class="form" name="lname" placeholder="Last Name"></div>
+                    <div><input type="email" class="form" placeholder="name@example.com"></div>
+                    <div><textarea id="w3review" name="w3review" rows="5" cols="35"
+                            placeholder="Enter your message for me here..."></textarea></div>
+                    <div><button type="submit">Submit</button></div>
                 </form>
             </div>
         </section>
