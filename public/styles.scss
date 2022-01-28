@@ -54,6 +54,7 @@ body {
 }
 
 .nav-menu {
+    z-index: 9999;
     position: fixed;
     text-align: center;
     right: 0;
@@ -107,15 +108,35 @@ body {
     }
 }
 
-.hero-section{
+.hero-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 3em;
     text-align: center;
+    height: 80vh;
 
-    .hero-img{
+    .hero-section-h1 {
+        font-size: 3em;
+    }
+
+    .hero-section-description * {
+        display: inline;
+    }
+    .hero-section-description {
+        height: 100px;
+    }
+    .hero-section-description > i {
+        position: relative;
+        font-size: 0.9em;
+        bottom: 1em;
+    }
+    .hero-section-description > p {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    .hero-img {
         max-width: 250px;
         min-width: 250px;
     }
@@ -124,3 +145,61 @@ body {
 img {
     width: 200px;
 }
+
+.about-section {
+    display: block;
+    background: rgb(63, 61, 86);
+    margin-top: 2em;
+    padding: 2em;
+    color: var(--font-color-secondary);
+    border-top-left-radius: 1em;
+    border-top-right-radius: 5em;
+    border-bottom-left-radius: 5em;
+    border-bottom-right-radius: 1em;
+
+    .about-section-current{
+        font-size: 2em;
+
+        .current-courses{
+            text-align: center;
+            font-size: 1.2em;
+            .curr-studying{
+                font-weight: bold;
+            }
+            ul{
+                margin-left: 1.5em;
+            }
+            li{
+                width: max-content;
+            }
+        }
+    }
+
+    .about-section-about-me{
+        font-size: 2em;
+        .journey{
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .skip a{
+            text-decoration: underline;
+            color: white;
+            font-weight: bold;
+        }
+    }
+
+    .finished-certificates{
+        ul {
+            padding: 0;
+            list-style: none;
+            a{
+                font-size: 0.7em;
+                text-decoration: underline;
+                color: rgb(196, 196, 196);
+            }
+        }
+    }
+}
+
+
+

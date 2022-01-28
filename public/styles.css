@@ -64,6 +64,7 @@ body {
 }
 
 .nav-menu {
+  z-index: 9999;
   position: fixed;
   text-align: center;
   right: 0;
@@ -146,6 +147,30 @@ body {
           align-items: center;
   gap: 3em;
   text-align: center;
+  height: 80vh;
+}
+
+.hero-section .hero-section-h1 {
+  font-size: 3em;
+}
+
+.hero-section .hero-section-description * {
+  display: inline;
+}
+
+.hero-section .hero-section-description {
+  height: 100px;
+}
+
+.hero-section .hero-section-description > i {
+  position: relative;
+  font-size: 0.9em;
+  bottom: 1em;
+}
+
+.hero-section .hero-section-description > p {
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 .hero-section .hero-img {
@@ -155,5 +180,66 @@ body {
 
 img {
   width: 200px;
+}
+
+.about-section {
+  display: block;
+  background: #3f3d56;
+  margin-top: 2em;
+  padding: 2em;
+  color: var(--font-color-secondary);
+  border-top-left-radius: 1em;
+  border-top-right-radius: 5em;
+  border-bottom-left-radius: 5em;
+  border-bottom-right-radius: 1em;
+}
+
+.about-section .about-section-current {
+  font-size: 2em;
+}
+
+.about-section .about-section-current .current-courses {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.about-section .about-section-current .current-courses .curr-studying {
+  font-weight: bold;
+}
+
+.about-section .about-section-current .current-courses ul {
+  margin-left: 1.5em;
+}
+
+.about-section .about-section-current .current-courses li {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.about-section .about-section-about-me {
+  font-size: 2em;
+}
+
+.about-section .about-section-about-me .journey {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.about-section .about-section-about-me .skip a {
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+}
+
+.about-section .finished-certificates ul {
+  padding: 0;
+  list-style: none;
+}
+
+.about-section .finished-certificates ul a {
+  font-size: 0.7em;
+  text-decoration: underline;
+  color: #c4c4c4;
 }
 /*# sourceMappingURL=styles.css.map */
