@@ -9,22 +9,19 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <script src="index.js" defer></script>
+    <script src="mobile-burger.js" defer></script>
 </head>
 
 <body>
     <main class="main-container">
         <nav class="navbar">
             <img src="images/logo/johnglennlogo.png" alt="Logo" class="logo">
-            <ul>
-                <a href="#">
-                    <li>About</li>
-                </a>
-                <a href="#">
-                    <li>Projects</li>
-                </a>
-                <a href="#">
-                    <li class="socials-list">Socials<i class="fas fa-caret-right"></i>
+            <div class="nav-menu nav-menu-none">
+                <i class="fas fa-times-circle close"></i>
+                <ul class="nav-ul">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li class="socials-list">Socials<i class="fas fa-caret-right socials-caret"></i>
                         <ul class="socials-links">
                             <li><a href="#Youtube"><i class="fab fa-youtube"></i></a></li>
                             <li><a href="#Github"><i class="fab fa-github"></i></a></li>
@@ -32,15 +29,17 @@
                             <li><a href="#StackOverflow"><i class="fab fa-stack-overflow"></i></a></li>
                         </ul>
                     </li>
-                </a>
-            </ul>
+                </ul>
+            </div>
+            <div class="burger-btn"><i class="fas fa-bars"></i></div>
         </nav>
+
         <section class="hero-section">
             <div class="hero-section-text-body">
                 <h1 class="hero-section-h1">Hi I'm John Glenn</h1>
                 <p class="hero-section-description">a No-Stack to Full-Stack Developer in the making</p>
             </div>
-            <img src="images/svgs/hero.svg" alt="hero-img">
+            <img src="images/svgs/hero.svg" alt="hero-img" class="hero-img">
         </section>
         <section class="about-section">
             <h2 class="about-section-p1">Looking forward to be a
@@ -105,11 +104,11 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <!-- <section class="projects">
             <div class="carousel-container">
                 <div class="projects-in-the-making"></div>
             </div>
-        </section>
+        </section> -->
     </main>
     <!-- <footer>
 
