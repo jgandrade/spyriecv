@@ -5,12 +5,15 @@
     --font-color-secondary: rgb(245, 245, 245);
 }
 
+*{
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    box-sizing: border-box;
     font-family: "Source Sans Pro", "verdana", "sans serif";
     font-size: 10px;
     color: var(--font-color-primary);
@@ -30,9 +33,9 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 85vw;
+    width: 100vw;
     height: 100px;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(226, 163, 163, 0.9);
     padding: 0 2em;
 }
 
@@ -299,11 +302,84 @@ footer {
     }
 }
 
-@media only screen and (min-width: 376px) {
-    
+@media only screen and (min-width: 337px) {
+    .contact {
+        p {
+            padding: 0 2em;
+            font-size: 1.5em;
+        }
+    }
+}
+
+@media only screen and (min-width: 660px) {
+    .hero-section {
+        flex-direction: row;
+    }
 }
 
 @media only screen and (min-width: 769px) {
+    .burger-btn {
+        display: none;
+    }
+    .nav-menu-none {
+        display: block;
+    }
+    .close {
+        display: none !important;
+    }
+    .nav-menu {
+        width: max-content;
+        height: max-content;
+        position: relative;
+        color: var(--font-color-primary);
+        background-color: transparent;
+    }
+    .nav-ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+        > li {
+            margin-bottom: 0 !important;
+        }
+    }
+    .nav-menu .nav-ul > li > a {
+        color: var(--font-color-primary);
+    }
+    .socials-caret {
+        display: inline-block !important;
+        position: relative;
+        top: 2px;
+        margin-left: 5px;
+    }
+    .socials-links {
+        display: none !important;
+    }
+    .socials-list {
+        cursor: pointer;
+    }
+    .socials-list:hover .socials-links {
+        display: flex !important;
+        position: absolute;
+        flex-direction: row;
+        width: 300px;
+        height: 50px;
+        top: 35px;
+        left: 65px;
+        border-radius: 1em;
+        background-color: rgba(235, 235, 235, 0.95);
+        li {
+            position: relative;
+        }
+        a {
+            color: var(--font-color-primary) !important;
+        }
+    }
+    .logo {
+        min-width: 60px;
+        max-width: 100px;
+    }
 }
 
 @media only screen and (min-width: 1025px) {
