@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap");
 :root {
   --font-color-primary: rgb(53, 53, 53);
   --font-color-secondary: rgb(245, 245, 245);
@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  font-family: "Source Sans Pro", "verdana", "sans serif";
+  font-family: "Oswald", "verdana", "sans serif";
   font-size: 10px;
   color: var(--font-color-primary);
   margin: 0;
@@ -56,6 +56,7 @@ body {
 
 .burger-btn {
   font-size: 2em;
+  cursor: pointer;
 }
 
 .nav-menu-block {
@@ -81,6 +82,7 @@ body {
 .nav-menu .close {
   margin: 1em 8em 1em 0;
   font-size: 3em;
+  cursor: pointer;
 }
 
 .nav-menu .nav-ul {
@@ -315,7 +317,7 @@ img {
 }
 
 .contact .form-div input {
-  font-family: "Source sans pro";
+  font-family: "Oswald","Verdana";
   padding: 1em 3em;
   margin-bottom: 1em;
   background: #f1f1f1;
@@ -328,7 +330,7 @@ img {
 }
 
 .contact .form-div textarea {
-  font-family: "Source sans pro";
+  font-family: "Oswald","Verdana";
   background: #f1f1f1;
   color: var(--font-color-primary);
   font-weight: bold;
@@ -367,18 +369,18 @@ footer {
   }
 }
 
-@media only screen and (min-width: 660px) {
+@media only screen and (min-width: 540px) {
   .hero-section {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-}
-
-@media only screen and (min-width: 769px) {
   .burger-btn {
     display: none;
+  }
+  .navbar {
+    height: 80px;
   }
   .nav-menu-none {
     display: block;
@@ -387,6 +389,7 @@ footer {
     display: none !important;
   }
   .nav-menu {
+    font-size: 0.8em;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
@@ -422,7 +425,7 @@ footer {
   .socials-caret {
     display: inline-block !important;
     position: relative;
-    top: 2px;
+    top: 1px;
     margin-left: 5px;
   }
   .socials-links {
@@ -442,20 +445,23 @@ footer {
             flex-direction: row;
     width: 300px;
     height: 50px;
-    top: 35px;
-    left: 65px;
+    top: 30px;
+    left: 10px;
     border-radius: 1em;
     background-color: rgba(235, 235, 235, 0.95);
-  }
-  .socials-list:hover .socials-links li {
-    position: relative;
   }
   .socials-list:hover .socials-links a {
     color: var(--font-color-primary) !important;
   }
   .logo {
-    min-width: 60px;
-    max-width: 100px;
+    min-width: 70px;
+    max-width: 70px;
+  }
+}
+
+@media only screen and (min-width: 660px) {
+  .navbar {
+    padding: 0 100px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
